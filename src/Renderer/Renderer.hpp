@@ -22,6 +22,6 @@ public:
     void drawTriangle();
 
 private:
-    unsigned int m_VAO, m_VBO; // Identificativi per la memoria GPU
-    Shader* m_defaultShader; // Shader di default per il rendering
+    unsigned int m_VAO = 0, m_VBO = 0; // Identificativi per la memoria GPU
+    Shader* m_defaultShader = nullptr; // Shader di default per il rendering
 };

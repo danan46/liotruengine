@@ -1,5 +1,6 @@
 #include "Application.hpp"
 
+
 Application::Application() 
     : m_window(1280, 720, "Liotru Engine v0.1"), m_running(true) {
         m_renderer.init();
@@ -12,4 +13,6 @@ void Application::run() {
         m_renderer.drawTriangle();
         m_window.update();
     }
+
+    m_renderer.shutdown();
 }
